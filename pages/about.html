@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+
+@charset "utf-8";
+<!--Force IE6 into quirks mode with this comment tag-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>About</title>
+<style type="text/css">
+
+body{
+margin: 0;
+padding: 0;
+border: 0;
+overflow: hidden;
+height: 100%; 
+max-height: 100%; 
+}
+
+#framecontentLeft, #framecontentRight{
+position: absolute; 
+top: 250px; 
+left: 0; 
+width: 200px; /*Width of left frame div*/
+height: 100%;
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background-color: grey;
+color: white;
+}
+
+#framecontentRight{
+left: auto;
+right: 0; 
+width: 150px; /*Width of right frame div*/
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background-color: grey;
+color: white;
+}
+
+
+#framecontentTop {
+	background-image:url(../media/Geneva%20Title2.2.jpeg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-color:#39F;
+	background-position:top center;
+	text-align: center;
+	top: 0;
+	left: 0; /*Set left value to WidthOfLeftFrameDiv*/
+	right: 0; /*Set right value to WidthOfRightFrameDiv*/
+	width: auto;
+	height: 250px; /*Height of top frame div*/
+	overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+	color: white;
+}
+
+#maincontent{
+position: fixed; 
+top: 250px; /*Set top value to HeightOfTopFrameDiv*/
+left: 200px; /*Set left value to WidthOfLeftFrameDiv*/
+right: 150px; /*Set right value to WidthOfRightFrameDiv*/
+bottom: 0;
+overflow: auto; 
+background: #fff;
+}
+
+.innertube{
+margin: 15px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+}
+
+* html body{ /*IE6 hack*/
+padding: 250px 150px 0 200px; /*Set value to (HeightOfTopFrameDiv WidthOfRightFrameDiv 0 WidthOfLeftFrameDiv)*/
+}
+
+* html #maincontent{ /*IE6 hack*/
+height: 100%; 
+width: 100%; 
+}
+
+* html #framecontentTop{ /*IE6 hack*/
+width: 100%;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="framecontentLeft">
+<div class="innertube">
+
+<nav>
+<ul>
+<li><a href="../Geneva Chiropractic.html">Home</a></li>
+<li><a href="Contact.html">Contact Information</a></li>
+<li><a href="about.html">About Us</a></li>
+
+</div>
+</div>
+
+<div id="framecontentRight">
+<div class="innertube">
+
+<h3>Sample text here</h3>
+
+</div>
+</div>
+
+<div id="framecontentTop">
+<div class="innertube">
+
+</div>
+</div>
+
+
+<div id="maincontent">
+<div class="innertube">
+
+
+<h1>About Page</h1>
+<p>With a great team consisting of a chiropractor, massage therapist, and physical therapists Geneva Chiropractic will assure your adjustment nad health needs. Our chiropractor, Collin Smith, specializes in spinal adjustments and repositioning. Jessica Brown, massage therapist, and Jamie Taylor, physical therapist work together to give you the best care in the area.</p>
+<img src="../media/dr nate, kathy, and lori_full.jpeg" alt="The Chiropractic Team" align="center">
+<H2>The Team</H2>
+<br>
+<br>
+<img src="../media/Web-profile-pic.jpg" alt="Chiropractic Doctor Collin" width="300">
+
+<H2>Collin Smith</H2>
+<p>Chiropractic Doctor</p+>
+<br>
+<br>
+<img src="../media/Dr._Caroline_1.JPG" alt="Message Theripist Jessica" width="300">
+<h2>Jessica Brown</h2>
+<p>Certified Message Therapist</p>
+<br>
+<br>
+<img src="../media/Dr.Sabrina-300x300.jpg" alt="Physical Therapist Jamie" width="300">
+<h2>Jamie Taylor</h2>
+<p>Certified Physical Therapist</p>
+
+
+</div>
+</div>
+
+
+</body>
+</html>
